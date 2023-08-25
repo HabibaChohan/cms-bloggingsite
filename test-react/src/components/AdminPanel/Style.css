@@ -1,0 +1,85 @@
+.Dashboard{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 14rem auto;
+    padding: 2rem;
+
+    gap: 1rem;
+    background: var(--color-gray-2);
+    color: var(--color-white);
+}
+.dashboard-container a,
+.dashboard-container h2,
+.dashboard-container h5{
+    color: var(--color-white);
+}
+
+.Dashboard aside a{
+    background: var(--color-primary);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.6rem;
+    border-bottom: 1px solid var(--color-gray-1);
+}
+
+.Dashboard aside ul li:last-child a{
+    border-bottom: none;
+}
+
+.Dashboard aside a:hover{
+    background: var(--color-gray-2);
+}
+
+.Dashboard .active{
+    background: var(--color-gray-2);
+}
+
+.Dashboard main{
+    margin-left: 1.5rem;
+}
+
+.Dashboard h2{
+    margin: 0 0 2rem 0;
+    line-height: 1;
+}
+.Dashboard table{
+    text-align: left;
+    width: 100%;
+}
+.Dashboard table th{
+    padding: .8rem;
+    background: var(--color-primary-light);
+}
+.Dashboard table td{
+    padding: .5rem;
+    border-bottom: 1px solid var(--color-primary-light);
+}
+
+/*---------------------------------button desining for dashboard---------------------*/
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: .6rem 1.2rem;
+    background: var(--color-primary);
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    color: var(--color-white);  
+}
+.btn:hover{
+    opacity: 0.75;
+}
+
+.sm{
+    padding: .3rem 0.7rem;
+}
+
+.danger{
+    background: var(--color-danger);
+}
+
