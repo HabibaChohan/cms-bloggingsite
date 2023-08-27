@@ -2,34 +2,26 @@ import React from 'react';
 
 
 
-const AddUser = ()=> {
+const SingUp = ()=> {
   return (
     <section className='form-section'>
     <div className='container form-section-container'>
-      <h2>Add User</h2>
+      <h2>Sing Up</h2>
       
 
       <form action="">
         <input type="text" placeholder='First Name' />
         <input type="text" placeholder='Last Name' />
-        
         <input type="email" placeholder='Email' />
-        <input type="password" placeholder='Create Password' />
-        <input type="password" placeholder='Confirm Password' />
-
-        <select>
-            <option value="0">Admin</option>
-            <option value="1">Author</option>
-        </select>
+        <input type="password" placeholder='Password' />
         
-
-          <div className='form-control'>
+        <div className='form-control'>
           <label htmlFor="profile-img">Upload Profile Image</label>
           <input type="file"  id="upload-img" />
         </div>
 
-        <button type='submit' className='btn'>Add User</button>
-        
+        <button type='submit' className='btn'>Sing Up</button>
+        <small>Already have an account <a href="./singin">Sing IN</a></small>
         </form>
 
     </div>
@@ -40,7 +32,4 @@ const AddUser = ()=> {
     );
 }
 
-export default AddUser; 
-
-
-
+export default SingUp; 

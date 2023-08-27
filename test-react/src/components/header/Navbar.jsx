@@ -2,21 +2,38 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import './Navbar.css';
 
+import { FaBars } from 'react-icons/fa';
+import { ImCross } from 'react-icons/im';
+
+
+{/*document.querySelector('.Open').addEventListener('click',()=>{
+   document.querySelector('.nav-link').Style.display='flex';
+   document.querySelector('.Open').Style.display='none';
+   document.querySelector('.close').Style.display='inline-block';
+})
+
+document.querySelector('.Close').addEventListener('click',()=>{
+   document.querySelector('.nav-link').Style.display='none';
+   document.querySelector('.Open').Style.display='inline-block';
+   document.querySelector('.close').Style.display='none';
+})*/}
 
 
 const Navebar = () => {
-  
+   const [Mobile, setMobile] = useState (false)
 
    return (
        <nav>
          <div className="container nav-container">
-     <h3><NavLink to="/" className="logo">SPORTS</NavLink></h3>
+     <h3><NavLink to="/" className="logo">Grill<span>Hub</span></NavLink></h3>
 
-       <ul className="nav-link">
+
+    
+
+       <ul className= {Mobile? "nav-link-mobail" : "nav-link"} onClick={() =>setMobile(false)}>
         <li><NavLink to="/" >Home</NavLink></li>
-        <li><NavLink to="/blog">Blog</NavLink></li>
+        <li><NavLink to="/blog">Find Your Scooter</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
         <li><NavLink to="/singin">SingIn</NavLink></li>
         <li>
@@ -30,10 +47,13 @@ const Navebar = () => {
             </div>
         </li>
        </ul>
+       
 
+       <button className="phone-button Open" onClick={() => setMobile(!Mobile)}>
+         {Mobile? <ImCross/> : <FaBars />  }</button>
 
-       <button className="phone-button Open"><i className="fa fa-bars"></i></button>
-       <button className="phone-button Close"><i className="fa fa-close"></i></button>
+       {/*<button className="phone-button Close"><ImCross/></button>*/}
+       
        </div>
    </nav>
    )

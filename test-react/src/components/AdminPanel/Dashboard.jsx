@@ -64,31 +64,76 @@ const Dashboard = ()=> {
             </thead>
             <tbody>
                 <tr>
-                    <td>Discovery</td>
-                    <td><a href="addcategory" className='btn sm'> Edit </a></td>
-                    <td><a href="addcategory" className='btn sm danger'> Delete</a></td>
+                    <td>Tips & Guide</td>
+                    <td><a href="managecategory" className='btn sm'> Edit </a></td>
+                    <td><a href="managecategory" className='btn sm danger'> Delete</a></td>
                 </tr>
 
                 <tr>
-                    <td>Discovery</td>
-                    <td><a href="addcategory" className='btn sm'> Edit </a></td>
-                    <td><a href="addcategory" className='btn sm danger'> Delete</a></td>
+                    <td>Best E-Scooter</td>
+                    <td><a href="managecategory" className='btn sm'> Edit </a></td>
+                    <td><a href="managecategory" className='btn sm danger'> Delete</a></td>
                 </tr>
 
                 <tr>
-                    <td>Discovery</td>
-                    <td><a href="addcategory" className='btn sm'> Edit </a></td>
-                    <td><a href="addcategory" className='btn sm danger'> Delete</a></td>
+                    <td>Toodler E-Scooter</td>
+                    <td><a href="amanagecategory" className='btn sm'> Edit </a></td>
+                    <td><a href="managecategory" className='btn sm danger'> Delete</a></td>
                 </tr>
 
                 <tr>
-                    <td>Discovery</td>
-                    <td><a href="addcategory" className='btn sm'> Edit </a></td>
-                    <td><a href="addcategory" className='btn sm danger'> Delete</a></td>
+                    <td>Budget Scooter</td>
+                    <td><a href="managecategory" className='btn sm'> Edit </a></td>
+                    <td><a href="managecategory" className='btn sm danger'> Delete</a></td>
                 </tr>
             </tbody>
             </table>
         </main>
+
+
+
+
+      { /* <main>
+            <h2>Add User</h2>
+            <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>User Name</th>
+                    <th>Admin</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Habiba Chohan</td>
+                    <td>Habichn</td>
+                    <td>Yes</td>
+                    <td><a href="adduser" className='btn sm'> Edit </a></td>
+                    <td><a href="adduser" className='btn sm danger'> Delete</a></td>
+                </tr>
+
+                <tr>
+                    <td>Hina</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td><a href="adduser" className='btn sm'> Edit </a></td>
+                    <td><a href="adduser" className='btn sm danger'> Delete</a></td>
+                </tr>
+
+                <tr>
+                    <td>Arbish</td>
+                    <td>-</td>
+                    <td>No</td>
+                    <td><a href="adduser" className='btn sm'> Edit </a></td>
+                    <td><a href="adduser" className='btn sm danger'> Delete</a></td>
+                </tr>
+
+        
+            </tbody>
+            </table>
+        </main>*/}
     </div>
    </section>
 

@@ -1,6 +1,11 @@
 :root {
+    /*--color-primary: #6f6af8;
+    --color-primary-variant: #5854c7;*/
+
+
     --color-primary: #6f6af8;
     --color-primary-variant: #5854c7;
+
     --color-primary-light: hsl(242, 91%, 69%, 18%);
     --color-danger: #da0f3f;
     --color-danger-light: hsl(346, 87%, 46%, 15%);

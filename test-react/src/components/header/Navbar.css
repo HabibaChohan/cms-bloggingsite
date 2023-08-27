@@ -27,11 +27,17 @@ nav .phone-button{
     overflow: hidden;
 }
 
-nav .h3{
-    font-size: 1.6rem;
-    font-weight: 300;
+nav .logo{
+    font-size: 1.9rem;
+    font-weight: 400;
     color: var(--color-white);
 }
+nav .logo span{
+    color: var(--color-danger);
+}
+
+
+
 
 nav .nav-link{
     display: flex;
@@ -82,9 +88,117 @@ nav .nav-profile ul{
 }
 
 
+/*---------------------res---------*/
+@media (max-width: 1024px) {
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    h4{
+        font-size: .8rem;
+    }
+
+    /*----------NAV-------*/
+    nav .phone-button{
+        display: inline-block;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+    .nav-container{
+        position: relative;
+    }
+    nav .nav-link{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        gap: 0 !important;
+        width: 12rem;
+        align-items: flex-start;
+        justify-content: center;
+        top: 5rem;
+        
+        
+    }
+    .nav-link li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+        box-shadow: 2rem 3rem 7rem rgba(0, 0, 0, 0.7);
+        
+    }
+    .nav-link li a {
+        width: 100%;
+        height: 100%;
+        background: var(--color-gray-1);
+        display: flex;
+        align-items: center;
+        padding: 0 2rem ;
+    }
+    .nav-link li a:hover{
+        opacity: 0.85;
+        color: var(--color-white);
 
 
+    }
 
+    nav ul li:last-child{
+        background: var(--color-gray-1);
+    } .nav-profile{
+        margin: 0 auto;
+    }
 
+   
+    /*nav .phone-button{
+        display: inline-block;
+        font-size: 2rem;
+        background: transparent;
+        color: var(--color-white);
+        cursor: pointer;
+    }
+    nav .Close{
+        display: none;
+    }
+    .nav-container{
+        position: relative;
+    }
+    nav .nav-link{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        gap: 0 !important;
+        width: 12rem;
+        align-items: flex-start;
+        justify-content: center;
+        top: 5rem;
+        display: none;
+    }
+    .nav-link li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+        box-shadow: 2rem 3rem 7rem rgba(0, 0, 0, 0.7);
+    }
+    .nav-link li a {
+        width: 100%;
+        height: 100%;
+        background: var(--color-gray-1);
+        display: flex;
+        align-items: center;
+        padding: 0 2rem ;
+    }
+    nav ul li:last-child{
+        background: var(--color-gray-1);
+    }
+    .nav-profile{
+        margin: 0 auto;
+    }*/
+    
 
-
+}
+    
